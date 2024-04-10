@@ -140,8 +140,40 @@ i {
   color: #FF4E00;
 }
 
+.section-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 16px;
+}
+
+.section-title p {
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.section-title a {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.heading {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+
 section {
-  padding: 50px 0;
+  padding: 50px 0 0;
 }
 
 .lp-hero-section {
@@ -237,5 +269,345 @@ section {
   .lp-hero-section .container .row {
     height: initial;
   }
+}
+
+.explore-therapies, .explore-package {
+  overflow: hidden;
+}
+
+.explore-therapies .owl-theme .owl-item, .explore-package .owl-theme .owl-item {
+  margin-bottom: 16px;
+}
+
+.explore-therapies .owl-theme .owl-nav, .explore-package .owl-theme .owl-nav {
+  display: block;
+}
+
+.explore-therapies .owl-theme .owl-nav .owl-prev, .explore-package .owl-theme .owl-nav .owl-prev {
+  left: -30px;
+  padding: 20px;
+}
+
+.explore-therapies .owl-theme .owl-nav .owl-next, .explore-package .owl-theme .owl-nav .owl-next {
+  right: -30px;
+}
+
+.explore-therapies .owl-theme .owl-nav .owl-prev, .explore-therapies .owl-theme .owl-nav .owl-next, .explore-package .owl-theme .owl-nav .owl-prev, .explore-package .owl-theme .owl-nav .owl-next {
+  position: absolute;
+  top: 40%;
+  border-radius: 50%;
+  border: 1px solid #a09e9e;
+  width: 30px;
+  height: 30px;
+  background-color: #ffff;
+  -webkit-box-shadow: 2px 2px 16px #00000030;
+          box-shadow: 2px 2px 16px #00000030;
+}
+
+.explore-therapies .owl-theme .owl-nav .owl-prev span, .explore-therapies .owl-theme .owl-nav .owl-next span, .explore-package .owl-theme .owl-nav .owl-prev span, .explore-package .owl-theme .owl-nav .owl-next span {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.explore-therapies .owl-theme .owl-nav .owl-prev:hover, .explore-therapies .owl-theme .owl-nav .owl-next:hover, .explore-package .owl-theme .owl-nav .owl-prev:hover, .explore-package .owl-theme .owl-nav .owl-next:hover {
+  background-color: #a09e9e;
+}
+
+@media (max-width: 576px) {
+  .explore-therapies .owl-theme .owl-nav .owl-prev, .explore-package .owl-theme .owl-nav .owl-prev {
+    left: -16px;
+    padding: 20px;
+  }
+  .explore-therapies .owl-theme .owl-nav .owl-next, .explore-package .owl-theme .owl-nav .owl-next {
+    right: -16px;
+  }
+}
+
+.explore-therapies .owl-theme .item, .explore-package .owl-theme .item {
+  padding: 16px 0px;
+}
+
+.explore-therapies .card, .explore-package .card {
+  height: 500px;
+  border: none;
+  -webkit-box-shadow: 2px 2px 16px #0000001c;
+          box-shadow: 2px 2px 16px #0000001c;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+.explore-therapies .card .img-wrapper, .explore-package .card .img-wrapper {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.explore-therapies .card .img-wrapper img, .explore-package .card .img-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.explore-therapies .card .card-body, .explore-package .card .card-body {
+  padding-top: 0;
+}
+
+.explore-therapies .card .card-body .product-title, .explore-package .card .card-body .product-title {
+  font-size: 23px;
+  color: #4B1346;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin: 16px 0;
+}
+
+.explore-therapies .card .card-body .description, .explore-package .card .card-body .description {
+  color: #4B1346;
+  font-weight: 400;
+  text-align: justify;
+}
+
+.explore-therapies .card .card-body .description p, .explore-package .card .card-body .description p {
+  font-size: 16px;
+  display: inline;
+}
+
+.explore-therapies .card .card-body .description p span, .explore-package .card .card-body .description p span {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.explore-therapies .card .card-body .description p .readmore, .explore-package .card .card-body .description p .readmore {
+  margin-top: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  font-weight: 500;
+  color: #FF4E00;
+}
+
+.explore-package {
+  position: relative;
+}
+
+.explore-package::after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  margin: auto;
+  z-index: 1;
+  right: -15%;
+  width: 675px;
+  height: 675px;
+  border-radius: 675px;
+  background-image: linear-gradient(145deg, #FFDAC8, transparent 80%);
+}
+
+.explore-package .row {
+  position: relative;
+  z-index: 2;
+}
+
+.how-it-works {
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.how-it-works::after {
+  content: "";
+  background-image: url(../images/Frame.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -70%;
+  margin: auto;
+  z-index: 1;
+  left: 0px;
+  width: 675px;
+  height: 675px;
+}
+
+.how-it-works .steps {
+  padding: 30px 60px;
+}
+
+.how-it-works .steps .num {
+  color: #FF8752;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.how-it-works .steps .name {
+  font-size: 18px;
+  color: #724632;
+  font-weight: 700;
+}
+
+.how-it-works .steps .descrip {
+  font-size: 14px;
+}
+
+.book-consultation {
+  padding-bottom: 50px;
+}
+
+.book-consultation .img-desk {
+  width: 480px;
+  height: 480px;
+  overflow: hidden;
+  border-radius: 165px 0 165px 0;
+  overflow: hidden;
+  margin: auto;
+}
+
+.book-consultation .img-desk img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.book-consultation .intro h2 {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.book-consultation .intro p {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.book-consultation .descrip p {
+  margin-bottom: 16px;
+}
+
+.book-consultation button {
+  margin-left: 0;
+  font-size: 16px;
+  width: unset;
+}
+
+.contact {
+  background-color: #4B1346;
+  color: #ffffff;
+  position: relative;
+  padding: 60px 0;
+}
+
+.contact .section-title {
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 24px;
+  display: block;
+  text-transform: capitalize;
+  position: relative;
+  text-align: center;
+}
+
+.contact .section-title::after {
+  content: '';
+  position: relative;
+  width: 40px;
+  height: 4px;
+  background-color: rgba(155, 14, 142, 0.5);
+  display: block;
+  margin: 1rem auto;
+}
+
+.contact .form-des {
+  color: #ffffff;
+  font-size: 16px;
+  opacity: .9;
+  display: block;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.contact .form-input {
+  display: block;
+  position: relative;
+  margin-bottom: 1rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 12px 16px;
+  border-radius: 8px;
+}
+
+.contact .form-input:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.contact .form-input label,
+.contact .form-input input,
+.contact .form-input select,
+.contact .form-input textarea {
+  display: block;
+  color: #ffffff;
+}
+
+.contact .form-input label {
+  margin-bottom: 0;
+  font-size: 12px;
+  opacity: .8;
+}
+
+.contact .form-input input,
+.contact .form-input select,
+.contact .form-input textarea {
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  padding: 0;
+  outline: none;
+  background-color: transparent;
+  font-weight: 500;
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
+}
+
+.contact .form-input .filled {
+  font-size: 12px;
+  top: 8px;
+}
+
+.contact .form-input option {
+  color: #000000;
+}
+
+.contact .solid-action-btn {
+  position: relative;
+  background-color: #FF4E00;
+  color: #ffffff;
+  border: none;
+  padding: .8rem 1rem;
+  text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  outline: none;
+  border-radius: 8px;
+}
+
+.contact .solid-action-btn:hover {
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+}
+
+.contact .solid-action-btn:active {
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
 }
 /*# sourceMappingURL=main.css.map */

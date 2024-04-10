@@ -35,71 +35,19 @@ $(document).ready(function () {
             $("#alertMessage").fadeOut();
         }, 2000);
     }); 
-
-    $('#update').click(function() {
-        $('.count').html(function(i, val) { return val*1+1 });
-    });
-    $('#minus').click(function() {
-        $('.count').html(function(i, val) { return val*1-1 });
-    });
-
-    $('.img-border').click(function(){
-        $("#img-box").css("display","flex");
-    });
-    $('#product-img-mob').owlCarousel({
-        loop: false,
-        margin: 16,
-        dots: true,
-        nav: false,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 2
-
-            },
-            1000: {
-                items: 3
-            }
-        }
-    });
-    $('#zoom-img-carousel').owlCarousel({
-        loop: false,
-        margin: 16,
-        dots: true,
-        nav: false,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 1
-
-            },
-            1000: {
-                items: 1
-            }
-        }
-    });
-    $('#merchandise-slide').owlCarousel({
-        loop:false,
+    $('#explore,#explore-product').owlCarousel({
+        loop:true,
         margin:10,
         nav:true,
-        dots:true,
-        lazyLoad:true,
         responsive:{
             0:{
-                items:2,
-                nav:false
+                items:1
             },
             600:{
-                items:3,
-                nav:false
+                items:2
             },
             1000:{
-                items:4,
-                dots:false
+                items:3
             }
         }
     })
