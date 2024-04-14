@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utsav-Ayurvedic</title>
+
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="node_modules/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/header_footer.css">
+</head>
+
+<body>
+    <header>
+        <div class="brand">
+            <div class="btnmenu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <a href="../"><img src="assets/images/Logo.svg" alt="Utsav Logo"></a>
+        </div>
+        <div class="menu">
+            <li>
+                <a href>
+                    <img class="active" src="/assets/images/icon/active-home.png" alt>
+                    <!-- <img src="/assets/images/icon/home.png" alt=""> -->
+                    <span class="active">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href>
+                    <!-- <img class="active" src="/assets/images/icon/active-feed.png" alt=""> -->
+                    <img src="/assets/images/icon/feed.png" alt>
+                    <span>My Feeds</span>
+                </a>
+            </li>
+            <li>
+                <a href>
+                    <!-- <img class="active" src="/assets/images/icon/active-explore.png" alt=""> -->
+                    <img src="/assets/images/icon/explore.png" alt>
+                    <span>Explore</span>
+                </a>
+            </li>
+            <li>
+                <a href>
+                    <!-- <img class="active" src="/assets/images/icon/active-practice.png" alt=""> -->
+                    <img src="/assets/images/icon/practice.png" alt>
+                    <span>Practice</span>
+                </a>
+            </li>
+        </div>
+        <div class="right-box">
+            <div class="search-btn" id="search">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="action-btn">
+                <img src="/assets/images/icon/action-btn.svg" alt>
+            </div>
+            <div class="notification-bell">
+                <i class="far fa-bell" id="bell"></i>
+            </div>
+            <div class="profile-pic" id="profile">
+                <img src="assets/images/profile-pic.jpg" alt="Profile Pic">
+            </div>
+        </div>
+        <div class="search-area">
+            <div class="search-box">
+                <input type="text" name="search" class="search" placeholder="Search for a course, people, etc.">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+    </header>
+    <div class="sidebar">
+        <ul>
+            <!-- <li><i class="fas fa-times"></i></li> -->
+            <li><a href>Packs/Plans</a></li>
+            <li><a href>View Profile</a></li>
+            <li><a href>All Products</a></li>
+            <li><a href>Get Involved</a></li>
+            <li><a href>About Us</a></li>
+            <li><a href>Contact Us</a></li>
+            <li><a href>FAQ's</a></li>
+            <li><a href>Code of Conduct</a></li>
+            <li><a href>Terms and Conditions</a></li>
+        </ul>
+    </div>
+    <div class="action-box" id="act-box">
+        <div class="action-item">
+            <div class="action-name">
+                <h6>Book LIVE Session</h6>
+            </div>
+            <div class="action-img">
+                <img src="./assets/images/icon/book-session.svg" alt>
+            </div>
+            <div class="line"></div>
+        </div>
+        <div class="action-item">
+            <div class="action-name">
+                <h6>Book P.T. Session</h6>
+            </div>
+            <div class="action-img">
+                <img src="./assets/images/icon/book-pt.svg" alt>
+            </div>
+            <div class="line"></div>
+        </div>
+        <div class="action-item">
+            <div class="action-name">
+                <h6>Post Inspiration</h6>
+            </div>
+            <div class="action-img">
+                <img src="./assets/images/icon/post-inspiration.svg" alt>
+            </div>
+            <div class="line"></div>
+        </div>
+        <div class="action-item">
+            <div class="action-name">
+                <h6>Ask Question</h6>
+            </div>
+            <div class="action-img">
+                <img src="./assets/images/icon/ask-question.svg" alt>
+            </div>
+        </div>
+    </div>
+    <div class="notification-box" id="box">
+        <div class="head">
+            <div class="row justify-content-between">
+                <div class="col-auto">
+                    <div class="title">Today</div>
+                </div>
+                <div class="col-auto">
+                    <span class="action" id="close">
+                        <i class="fas fa-times"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="notification-item">
+            <div class="notifi-img">
+                <img src="./assets/images/profile-pic.png" alt>
+            </div>
+            <div class="notifi-text">
+                <h6>Alexendra Borke</h6>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. </p>
+            </div>
+            <div class="notifi-time">
+                <p>5 min ago</p>
+            </div>
+            <div class="line"></div>
+        </div>
+        <div class="notification-item">
+            <div class="notifi-img">
+                <img src="./assets/images/profile-pic.png" alt>
+            </div>
+            <div class="notifi-text">
+                <h6>Alexendra Borke</h6>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. </p>
+            </div>
+            <div class="notifi-time">
+                <p>5 min ago</p>
+            </div>
+            <div class="line"></div>
+        </div>
+        <div class="head">
+            <div class="row justify-content-between">
+                <div class="col-auto">
+                    <div class="title">This Week</div>
+                </div>
+            </div>
+        </div>
+        <div class="notification-item">
+            <div class="notifi-img">
+                <img src="./assets/images/profile-pic.png" alt>
+            </div>
+            <div class="notifi-text">
+                <h6>Alexendra Borke</h6>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. </p>
+            </div>
+            <div class="notifi-time">
+                <p>5 min ago</p>
+            </div>
+            <div class="line"></div>
+        </div>
+        <div class="notification-item">
+            <div class="notifi-img">
+                <img src="./assets/images/profile-pic.png" alt>
+            </div>
+            <div class="notifi-text">
+                <h6>Alexendra Borke</h6>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. </p>
+            </div>
+            <div class="notifi-time">
+                <p>5 min ago</p>
+            </div>
+            <div class="line"></div>
+        </div>
+    </div>
+    <div class="profile-box" id="profile-box">
+        <a href class="option">
+            <div class="opt-icon">
+                <img src="https://www.utsavyoga.com/assets/img/def_profile_img.png">
+            </div>
+            <div class="action-name">
+                <p>Hi! <span>Mohit Varshney</span></p>
+            </div>
+            <div class="line"></div>
+        </a>
+        <div href class="option">
+            <div class="opt-icon">
+                <img src="https://www.utsavyoga.com/assets/img/icons/wallet-icon.png">
+            </div>
+            <div class="action-name">
+                <p> &#8377; <span class="amount">1700</span></p>
+            </div>
+            <div class="line"></div>
+        </div>
+        <a href class="option">
+            <div class="opt-icon">
+                <img src="https://files.utsav.yoga/templates/switch.svg">
+            </div>
+            <div class="action-name">
+                <p>Switch To Teacher</p>
+            </div>
+            <div class="line"></div>
+        </a>
+        <a href class="option">
+            <div class="opt-icon">
+                <img src="https://files.utsav.yoga/templates/logout.svg">
+            </div>
+            <div class="action-name">
+                <p>Logout!</p>
+            </div>
+        </a>
+    </div>
+
+    <section class="explore-therapy therapy-detail">
+        <div class="floating-elem">
+            <ul>
+                <li><img src="assets/images/icon/plus.svg" alt=""></li>
+                <li><img src="assets/images/icon/plus.svg" alt=""></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-7 col-md-12">
+                    <h2 class="sub-heading">Abhyanga</h2>
+                    <div class="img-desk mb-4">
+                        <img src="assets/images/abhyang.jpeg" alt="">
+                    </div>
+                    <div class="content">
+                        <p class="ques mb-2">What is Abhyang Therapy</p>
+                        <p class="ans mb-3">Experience the soothing embrace of Abhyang therapy, where warm medicated oil envelops your entire body from head to toe. Say goodbye to muscle stiffness and pain as the healing properties of the oil work their magic. Its potent blend of herbs nourishes the skin, leaving it radiant and supple. But it's not just about the skin; Abhyang enhances joint mobility, making every movement more effortless. If you struggle with muscle tension or joint discomfort, Abhyang offers relief and relaxation, bringing you closer to a life of comfort and ease. The transformative power of this therapy will melt away tension, leaving you refreshed, energized, and deeply nourished, ready to embrace life with newfound enthusiasm and strength.</p>
+                        <p class="ques mb-2">Frequently Asked Questions</p>
+                        <p class="ques mb-2">What are the different type of abhyanga?</p>
+                        <ol>
+                            <li class="ans">Sarvand abhyang-when full body is included.</li>
+                            <li class="ans">Ekaang abhyanga-on a particular body part.</li>
+                            <li class="ans">Shirobhyanga</li>
+                            <li class="ans">Padabhyanga</li>                          
+                        </ol>
+                        <p class="ques mb-2">What are the different oils used in Abhyanga?</p>
+                        <p class="ans">For vata-ksheerbala oil,mahamasha oil,balashwagandhadi oil etc.</p>
+                        <p class="ans">For pitta-any coconut oil base medicated oil like manjishtadi oil,eladi oil etc.These oils having cooling property which reduces excessive heat and burning sensation because of high pitta.</p>
+                        <p class="ans mb-3">For kapha-Oils made with sesame and mustard oil base suitable for kapha person like sahacharadi oil,marichyadi oil,karpooradi oil etc.</p>
+
+                        <p class="ques mb-2">Who should avoid Abhyanga?</p>
+                        <p class="ans mb-3">When someone has indigestion,early stage of fever or soon after fever,in high kapha condition such as cough with sputum,obesity etc,abhyanga is not recommended.Abhyanga is also contraindicated during the first three days or during heavy flow of menstruating women.</p>
+
+                        <p class="ques mb-2">What diseases can be treated with Abhyanga?</p>
+                        <p class="ans mb-3">Abhyanga can be done on daily basis to maintain overall health.It consider as a poorva karma(preparatory phase) of panchkarma.mainly it works on muscle stiffness,pain,dryness,skin tone,eyesight,sleeplessness etc.It helps to manage musculoskeletal and nervous system diseases.</p>
+
+                        <p class="ques mb-2">What is the difference between abhyanga and normal massage?</p>
+                        <p class="ans mb-3">Abhyanga employs holistic and integrative medicine principles used 3000 years ago in India, where it was first discovered. The main focus of this massage treatment is to balance out doshas within your body to achieve spiritual fulfilment and relaxation.In this different medicated oil is used for different body type.Its not just a deep tissue massage but this is also disease specific because of oil selection and Marma point to focus.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-5 col-md-12">
+                    <h2 class="sub-heading">Book a consultation </h2>
+                    <div class="consult-form mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputName" class="form-label">Name</label>
+                                <input type="email" class="form-control" id="exampleInputName" aria-describedby="name">
+                              </div>
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label">Email</label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleInputNumber" class="form-label">Phone No.</label>
+                              <div class="row m-0">
+                                <div class="col-3 p-0">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>+91</option>
+                                        <option value="1">+1</option>
+                                        <option value="2">+92</option>
+                                        <option value="3">+85</option>
+                                    </select>
+                                </div>
+                                <div class="col-9">
+                                    <input type="number" class="form-control" id="exampleInputNumber">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputRadio" class="form-label">Do you Need <br>Online/ Offline Consultation</label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">Online</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">Offline</label>
+                                  </div>
+                              </div>
+                            <button type="submit" class="solid-action-btn">Submit</button>
+                        </form>
+                    </div>
+                    <h2 class="sub-heading">Benefits</h2>
+                    <ol>
+                        <li>It delays jara(works as anti aging treatment)</li>
+                        <li>Relieves excess Shram(tiredness)</li>
+                        <li>Balance vata in body(removes external and internal dryness of body which creates pains nd aches.)</li>
+                        <li>Drishtiprasada(Improves vision)</li>
+                        <li>Pushtikar(It nourishes body tissue nd give strength to them).</li>
+                        <li>Ayuvardhak(Prolong lifespan)</li>
+                        <li>Swapnadharak(Induce good sleep so helps in insomnia.)</li>
+                        <li>Sutvaktva &Dardyakrit(Improves skin complexion & helps to maintain a good physique nd body tone.)</li>
+                        <li>Prepares the body for panchakarma(purva karma), by mobilising the doshas and moving ama (toxins) towards the digestive tract in order to be eliminated.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="explore-therapies">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <p>Explore Ayurveda Therapies</p>
+                    <a href="explore-ayurvedic.html">View All</a>
+                </div>
+                <div class="col">
+                    <div class="owl-carousel owl-theme" id="explore">
+                        <div class="item ms-2 me-2">
+                            <div class="card">
+                                <div class="img-wrapper">
+                                    <img src="assets/images/explore1.jpeg" loading="lazy">
+                                </div>
+                                <div class="card-body">
+                                    <div class="product-title">
+                                        <p>abhyanga</p>
+                                    </div>
+                                    <div class="description">
+                                        <p><span>Experience the soothing embrace of Abhyang therapy, where warm medicated oil envelops your entire body from head to toe. Say goodbye to muscle stiffness and pain as the healing properties of the oil work their magic.</span><a href="therapy-detail.html" class="readmore">Read More</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item ms-2 me-2">
+                            <div class="card">
+                                <div class="img-wrapper">
+                                    <img src="assets/images/explore2.jpeg" loading="lazy">
+                                </div>
+                                <div class="card-body">
+                                    <div class="product-title">
+                                        <p>Churna pinda sweda</p>
+                                    </div>
+                                    <div class="description">
+                                        <p><span>Discover the profound benefits of Churna Pinda Sweda (potli/ Podikizhi), an Ayurvedic therapy harnessing the healing properties of medicated herbal mixtures in bolus form. Targeting musculoskeletal issues and injury-related pain,</span><a href="therapy-detail.html" class="readmore">Read More</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item ms-2 me-2">
+                            <div class="card">
+                                <div class="img-wrapper">
+                                    <img src="assets/images/explore3.jpeg" loading="lazy">
+                                </div>
+                                <div class="card-body">
+                                    <div class="product-title">
+                                        <p>Shirodhara</p>
+                                    </div>
+                                    <div class="description">
+                                        <p><span>In Shirodhara, a peaceful Ayurvedic therapy, warm medicated oil gently pours onto the forehead in a continuous stream. Its benefits extend beyond relaxation, offering relief from anxiety, insomnia, or any neurological concerns..</span><a href="therapy-detail.html" class="readmore">Read More</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="explore-package">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <p>Explore Packages</p>
+                    <a href="package-detail.html">View All</a>
+                </div>
+                <div class="col">
+                    <div class="owl-carousel owl-theme" id="explore-product">
+                        <div class="item ms-2 me-2">
+                            <div class="card">
+                                <div class="img-wrapper">
+                                    <img src="assets/images/explore4.jpeg" loading="lazy">
+                                </div>
+                                <div class="card-body">
+                                    <div class="product-title">
+                                        <p>Utsav’s Weight Loss Package</p>
+                                    </div>
+                                    <div class="description">
+                                        <p><span>Discover tranquility amidst chaos with Utsav’s Destress Package. Unwind and rejuvenate your body and mind with ancient healing therapies and modern wellness practices. From soothing massages to calming meditation,</span><a href="" class="readmore">Read More</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item ms-2 me-2">
+                            <div class="card">
+                                <div class="img-wrapper">
+                                    <img src="assets/images/explore2.jpeg" loading="lazy">
+                                </div>
+                                <div class="card-body">
+                                    <div class="product-title">
+                                        <p>Utsav’s Body Detox Package</p>
+                                    </div>
+                                    <div class="description">
+                                        <p><span>Renew your vitality with Utsav’s Body Detox Package, a holistic solution to cleanse your system and revitalize your well-being. Experience therapeutic purgation, luxurious oil massages, and expert guidance to eliminate toxins, alleviate health concerns, </span><a href="" class="readmore">Read More</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item ms-2 me-2">
+                            <div class="card">
+                                <div class="img-wrapper">
+                                    <img src="assets/images/explore5.png" loading="lazy">
+                                </div>
+                                <div class="card-body">
+                                    <div class="product-title">
+                                        <p>Utsav’s  De-stress Package</p>
+                                    </div>
+                                    <div class="description">
+                                        <p><span>Embark on a journey of total renewal with Utsav’s Rejuvenation Package. Indulge in ancient healing therapies and modern wellness practices to replenish your energy, restore your glow, and revitalize your body and mind. </span><a href="" class="readmore">Read More</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="container">
+            <h4 class="section-title">Request a call back</h4>
+            <span class="form-des">Kindly fill the form to request a call back.</span>
+            <form action="javascript:void(0)" id="kidfit-form">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-input">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" class="input-text" placeholder="Enter here" required>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-input">
+                            <label for="mobile">Mobile Number</label>
+                            <input type="number" id="mobile" class="input-text" placeholder="Enter here" required maxlength = "10">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+                        <div class="form-input">
+                            <label for="email">Email Id</label>
+                            <input type="email" id="email" class="input-text" placeholder="email@address">
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <span class="mt-2 mb-2 text-center error-message" role="alert">
+                            
+                        </span>
+                    </div>
+                    <div class="col-sm-12 text-center">
+                        <input type="submit" value="Submit" class="solid-action-btn">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="col-brand">
+                        <img src="assets/images/Logo.svg" alt>
+                        <span class="copyright">&copy; Utsav Seva
+                            Foundation. All rights reserved.</span>
+                        <div class="social-media">
+                            <a href="https://www.facebook.com/Utsavfoundation" target="_blank">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="https://twitter.com/utsav_yoga" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://www.instagram.com/utsavyoga/" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UC4vC_aFLuhHQgcMv1mBrKQw?view_as=subscriber"
+                                target="_blank">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/showcase/70394467/admin/" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <h4 class="footer-col-title">Useful Links</h4>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <div class="links">
+                                <a class="link" href> Utsav Unlimited</a>
+                                <a class="link" href> Aerial Fit</a>
+                                <a class="link" href> Prenatal Yoga</a>
+                                <a class="link" href> Utsav Live</a>
+                                <a class="link" href> Kid Fit</a>
+                                <a class="link" href>Counselling &amp;
+                                    Coaching</a>
+                                <a class="link" href> Awareness &amp;
+                                    Restoration</a>
+                                <a class="link" href> Strength &amp;
+                                    Flexibility</a>
+                                <a class="link" href> Personal Training</a>
+                                <a class="link" href> Utsav Nutrition</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <div class="links">
+                                <a class="link" href> About Utsav</a>
+                                <a class="link" href> Meet Our Team</a>
+                                <a class="link" href>Blogs</a>
+                                <a class="link" href>Events</a>
+                                <a class="link" href>Co-Living</a>
+                                <a class="link" href>FAQ</a>
+                                <a class="link" href>Get Involved</a>
+                                <a class="link" href> Work Play </a>
+                                <a class="link" href> Be a Personal Trainer</a>
+                                <a class="link" href> Franchise Info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                    <div class="get-app mb-5">
+                        <h4 class="footer-col-title">Install App</h4>
+                        <a href><img src="assets/images/playstore.png" alt></a>
+                    </div>
+                    <h4 class="footer-col-title">Subscribe to our Newsletter</h4>
+                    <p>Join our mailing list for exclusive programs, offers,
+                        and discounts. We promise to only send you
+                        good things.</p>
+                    <div class="subscribe-box">
+                        <input type="email" placeholder="Email Address">
+                        <input type="submit" value="Subscribe">
+                    </div>
+                    <small class="subscribe-box-validation lbl-error"></small>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="add-links">
+        <div class="container">
+            <a class="link" href>Contact Us</a>
+            <a class="link" href>Terms & Conditions</a>
+            <a class="link" href>Privacy Policies</a>
+            <a class="link" href>Code of Conduct</a>
+        </div>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -172,6 +172,12 @@ i {
   text-align: center;
 }
 
+.sub-heading {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
 section {
   padding: 50px 0 0;
 }
@@ -428,7 +434,7 @@ section {
   background-image: url(../images/Frame.png);
   background-repeat: no-repeat;
   position: absolute;
-  bottom: -70%;
+  bottom: -50%;
   margin: auto;
   z-index: 1;
   left: 0px;
@@ -456,48 +462,219 @@ section {
   font-size: 14px;
 }
 
-.book-consultation {
+.book-consultation, .explore-therapy {
   padding-bottom: 50px;
 }
 
-.book-consultation .img-desk {
+.book-consultation .img-desk, .explore-therapy .img-desk {
   width: 480px;
-  height: 480px;
+  height: 400px;
   overflow: hidden;
   border-radius: 165px 0 165px 0;
   overflow: hidden;
   margin: auto;
+  -webkit-box-shadow: 0px 8px 32px 0px #4B13461A;
+          box-shadow: 0px 8px 32px 0px #4B13461A;
 }
 
-.book-consultation .img-desk img {
+.book-consultation .img-desk img, .explore-therapy .img-desk img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  -o-object-position: top center;
+     object-position: top center;
 }
 
-.book-consultation .intro h2 {
+.book-consultation .intro h2, .explore-therapy .intro h2 {
   font-weight: 700;
   font-size: 20px;
   margin-bottom: 8px;
 }
 
-.book-consultation .intro p {
+.book-consultation .intro p, .explore-therapy .intro p {
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 16px;
 }
 
-.book-consultation .descrip p {
+.book-consultation .descrip p, .explore-therapy .descrip p {
   margin-bottom: 16px;
 }
 
-.book-consultation button {
+.book-consultation button, .explore-therapy button {
   margin-left: 0;
   font-size: 16px;
   width: unset;
+}
+
+.explore-therapy {
+  padding: 50px 0 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.explore-therapy::after {
+  content: "";
+  position: absolute;
+  top: -25%;
+  margin: auto;
+  z-index: 1;
+  right: -15%;
+  width: 675px;
+  height: 675px;
+  border-radius: 675px;
+  background-image: linear-gradient(145deg, #FFDAC8, transparent 80%);
+}
+
+.explore-therapy .floating-elem ul {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.explore-therapy .floating-elem ul li {
+  list-style: none;
+}
+
+.explore-therapy .floating-elem ul li:first-child {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  z-index: 2;
+}
+
+.explore-therapy .floating-elem ul li:nth-child(2) {
+  position: absolute;
+  left: 2%;
+  top: 40%;
+}
+
+.explore-therapy .container {
+  position: relative;
+  z-index: 4;
+}
+
+.explore-therapy .img-desk {
+  width: 100%;
+  height: 400px;
+}
+
+.explore-therapy .img-desk img {
+  -o-object-position: center;
+     object-position: center;
+}
+
+.explore-therapy .descrip {
+  font-weight: 500;
+}
+
+.explore-therapy .price {
+  font-weight: 600;
+}
+
+.explore-therapy .note {
+  font-weight: 600;
+  color: #9B0E8E;
+}
+
+.explore-therapy .row {
+  margin-bottom: 80px;
+}
+
+.therapy-detail .container {
+  position: relative;
+  z-index: 4;
+}
+
+.therapy-detail .img-desk {
+  border-radius: 5px;
+}
+
+.therapy-detail .ques {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.therapy-detail .ans {
+  font-weight: 500;
+}
+
+.therapy-detail .consult-form {
+  background: linear-gradient(200.73deg, #FCFAFF -0.03%, #F4ECFF 99.97%);
+  padding: 1rem;
+  -webkit-box-shadow: 0px 4px 8px 0px #0000001A;
+          box-shadow: 0px 4px 8px 0px #0000001A;
+}
+
+.therapy-detail .consult-form form label {
+  font-weight: 600;
+  display: block;
+}
+
+.therapy-detail .consult-form form button {
+  width: 100%;
+}
+
+.therapy-detail li {
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.package-description {
+  font-weight: 500;
+}
+
+.package-description .img-desk {
+  border-radius: 5px;
+  height: 400px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.package-description .img-desk img {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.package-inclusions .points {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 16px;
+  -webkit-box-shadow: 0px 8px 16px 0px #240B451A;
+          box-shadow: 0px 8px 16px 0px #240B451A;
+}
+
+.package-inclusions .points .icon {
+  text-align: center;
+}
+
+.package-inclusions .points .icon img {
+  margin: auto;
+  width: 60%;
+}
+
+.package-inclusions .points .content ul {
+  padding-left: 16px;
+}
+
+.who-is-for img {
+  width: 100%;
+  height: 70%;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
 }
 
 .contact {

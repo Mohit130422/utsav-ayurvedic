@@ -374,7 +374,7 @@ header .search-area .search-box input::-webkit-input-placeholder {
   width: 300px;
   -webkit-transition: .5s;
   transition: .5s;
-  z-index: 3;
+  z-index: 10;
   background-color: #fff;
   -webkit-box-shadow: 0 4px 8px #00000010;
           box-shadow: 0 4px 8px #00000010;
