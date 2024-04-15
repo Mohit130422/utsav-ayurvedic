@@ -309,10 +309,9 @@ header .search-area .search-box input::-webkit-input-placeholder {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   header .brand .btnmenu {
-    padding: 0px;
-    margin: auto 10px;
+    margin: 0;
   }
 }
 

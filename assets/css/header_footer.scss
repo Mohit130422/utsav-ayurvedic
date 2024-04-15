@@ -252,11 +252,10 @@ header{
             padding: 5px 15px;
         }
     }
-    @media (max-width:375px){
+    @media (max-width:576px){
         .brand{
             .btnmenu{
-                padding:0px ;
-                margin: auto 10px;
+                margin: 0;
             }
         }
     }

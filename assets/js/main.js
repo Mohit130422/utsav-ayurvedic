@@ -18,8 +18,8 @@ $(document).ready(function () {
     $(".btnmenu").click(function(){
         $(".sidebar").toggleClass('openside');
     });
-    $('#order-done').click(function(){
-        $("#confirmation-box").css("display","flex");
+    $('.solid-action-btn').click(function(){
+        $("#consultation-box").css("display","flex");
     });
     $("#btnCloseDone, #btnDone").click(function(){
         $("#confirmation-box").hide();

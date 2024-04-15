@@ -93,6 +93,11 @@ i{
         filter: brightness(120%);
         box-shadow: 0 8px 16px rgba($text-dark-color, .2);
     }
+    @media(max-width:576px){
+        font-size: 14px;
+        padding: 8px 10px;
+        margin: 0 8px;
+    }
 }
 
 .outline-action-btn{
@@ -108,6 +113,11 @@ i{
     &:hover {
         color: $primary-color;
     }
+    @media(max-width:576px){
+        font-size: 14px;
+        padding: 8px 10px;
+        margin: 0;
+    }
 }
 .section-title{
     display: flex;
@@ -122,6 +132,15 @@ i{
         font-size: 14px;
         font-weight: 600;
     }
+    @media(max-width:576px){
+        p{
+            font-size: 16px;
+        }
+        a{
+            font-size: 12px;
+        }
+
+    }
 }
 .heading{
     color: rgba(0, 0, 0, 0.8);
@@ -135,6 +154,91 @@ i{
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 30px;
+}
+.blur-overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    animation-name: fadeIn;
+    animation-duration: 0.3s;
+    z-index: 1000;
+    .book-consultation-box{
+        margin: auto;
+        background-color: #ffffff;
+        box-shadow: 0 8px 32px #00000052;
+        overflow: hidden;
+        border-radius: 8px;
+        width: 750px;
+        height: max-content;
+        animation-name: fadeUp;
+        animation-duration: 0.5s;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .head{
+            height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            .btnCloseDialog{
+                background-color: transparent;
+                border: none;
+                padding: 1rem;
+                outline: none;
+                transition: all 0.3s ease;
+                img{
+                    height: 24px;
+                     width: 24px;
+                     opacity: 0.5;
+                }
+            }
+        }
+        .body{
+            padding: 16px 32px 16px 16px;
+            .consult-form{
+                background: linear-gradient(200.73deg, #FCFAFF -0.03%, #F4ECFF 99.97%);
+                padding: 1rem;
+                box-shadow: 0px 4px 8px 0px #0000001A;
+                form{
+                    label{
+                        font-weight: 600;
+                        display: block;
+                    }
+                    button{
+                        width: 100%;
+                    }
+                }
+                .heading{
+                    text-align: left;
+                    color: $secondary-color;
+                }
+            }
+        }
+        .footer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 56px;
+            padding: 0 1rem;
+        }
+    }
+    @media(max-width:576px){
+        .book-consultation-box{
+            width: 420px;
+            img{
+                display: none;
+            }
+        }
+    }
 }
 section{
     padding: 50px 0 0;
@@ -195,7 +299,7 @@ section{
     }
    
     @media (max-width:991px) {
-        padding: 0 0 5rem;
+        padding: 2rem 0 5rem;
         &::before,
         &::after {
             display: none;
@@ -216,11 +320,26 @@ section{
             }
         }
         .container {
-            z-index: 10;
+            z-index: 5;
             position: relative;
             .row {
                 height: initial;
             }
+        }
+    }
+    @media(max-width:768px){
+        .title{
+            font-size: 22px;
+            line-height: 30px;
+        }
+        .sub-title{
+            font-size: 15px;
+        }
+        .btns{
+            margin-top: 2rem;
+        }
+        .imgs{
+            margin-top: 3rem;
         }
     }
 }
@@ -325,6 +444,7 @@ section{
             }
         }
     }
+
 }
 .explore-package{
     position: relative;
@@ -343,6 +463,14 @@ section{
     .row{
         position: relative;
         z-index: 2;
+    }
+    @media(max-width: 576px){
+        &::after{
+            display: none;
+        }
+        .heading{
+            font-size: 20px;
+        }
     }
 }
 .how-it-works{
@@ -374,6 +502,14 @@ section{
         }
         .descrip{
             font-size: 14px;
+        }
+    }
+    @media(max-width: 576px){
+        &::after{
+            display: none;
+        }
+        .heading{
+            font-size: 20px;
         }
     }
 }
@@ -413,6 +549,18 @@ section{
         margin-left: 0;
         font-size: 16px;
         width: unset;
+    }
+    @media(max-width: 576px){
+        .heading{
+            font-size: 20px;
+        }
+        .img-desk{
+            width: 100%;
+            margin-bottom: 2rem;
+            img{
+                width: 100%;
+            }
+        }
     }
 }
 .explore-therapy{
@@ -481,6 +629,16 @@ section{
     .row{
         margin-bottom: 80px;
     }
+    @media(max-width:576px){
+        .floating-elem{
+            display: none;
+        }
+        .img-desk{
+            border-radius: 12px;
+            margin: 16px 0;
+            height: 200px;
+        }
+    }
 }
 .therapy-detail{
     .container{
@@ -514,6 +672,9 @@ section{
     li{
         font-weight: 500;
         margin-bottom: 8px;
+    }
+    img{
+        width: 100%;
     }
 }
 .package-description{
@@ -650,3 +811,4 @@ section{
         }
     }
 }
+

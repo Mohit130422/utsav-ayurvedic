@@ -124,6 +124,14 @@ i {
           box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+@media (max-width: 576px) {
+  .solid-action-btn {
+    font-size: 14px;
+    padding: 8px 10px;
+    margin: 0 8px;
+  }
+}
+
 .outline-action-btn {
   color: #FF4E00;
   padding: 10px 24px;
@@ -138,6 +146,14 @@ i {
 
 .outline-action-btn:hover {
   color: #FF4E00;
+}
+
+@media (max-width: 576px) {
+  .outline-action-btn {
+    font-size: 14px;
+    padding: 8px 10px;
+    margin: 0;
+  }
 }
 
 .section-title {
@@ -163,6 +179,15 @@ i {
   font-weight: 600;
 }
 
+@media (max-width: 576px) {
+  .section-title p {
+    font-size: 16px;
+  }
+  .section-title a {
+    font-size: 12px;
+  }
+}
+
 .heading {
   color: rgba(0, 0, 0, 0.8);
   font-size: 30px;
@@ -176,6 +201,128 @@ i {
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 30px;
+}
+
+.blur-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: auto;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  z-index: 1000;
+}
+
+.blur-overlay .book-consultation-box {
+  margin: auto;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 8px 32px #00000052;
+          box-shadow: 0 8px 32px #00000052;
+  overflow: hidden;
+  border-radius: 8px;
+  width: 750px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  -webkit-animation-name: fadeUp;
+          animation-name: fadeUp;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+
+.blur-overlay .book-consultation-box img {
+  width: 100%;
+  height: 100%;
+}
+
+.blur-overlay .book-consultation-box .head {
+  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.blur-overlay .book-consultation-box .head .btnCloseDialog {
+  background-color: transparent;
+  border: none;
+  padding: 1rem;
+  outline: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.blur-overlay .book-consultation-box .head .btnCloseDialog img {
+  height: 24px;
+  width: 24px;
+  opacity: 0.5;
+}
+
+.blur-overlay .book-consultation-box .body {
+  padding: 16px 32px 16px 16px;
+}
+
+.blur-overlay .book-consultation-box .body .consult-form {
+  background: linear-gradient(200.73deg, #FCFAFF -0.03%, #F4ECFF 99.97%);
+  padding: 1rem;
+  -webkit-box-shadow: 0px 4px 8px 0px #0000001A;
+          box-shadow: 0px 4px 8px 0px #0000001A;
+}
+
+.blur-overlay .book-consultation-box .body .consult-form form label {
+  font-weight: 600;
+  display: block;
+}
+
+.blur-overlay .book-consultation-box .body .consult-form form button {
+  width: 100%;
+}
+
+.blur-overlay .book-consultation-box .body .consult-form .heading {
+  text-align: left;
+  color: #9B0E8E;
+}
+
+.blur-overlay .book-consultation-box .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 56px;
+  padding: 0 1rem;
+}
+
+@media (max-width: 576px) {
+  .blur-overlay .book-consultation-box {
+    width: 420px;
+  }
+  .blur-overlay .book-consultation-box img {
+    display: none;
+  }
 }
 
 section {
@@ -248,7 +395,7 @@ section {
 
 @media (max-width: 991px) {
   .lp-hero-section {
-    padding: 0 0 5rem;
+    padding: 2rem 0 5rem;
   }
   .lp-hero-section::before, .lp-hero-section::after {
     display: none;
@@ -269,11 +416,27 @@ section {
     display: block;
   }
   .lp-hero-section .container {
-    z-index: 10;
+    z-index: 5;
     position: relative;
   }
   .lp-hero-section .container .row {
     height: initial;
+  }
+}
+
+@media (max-width: 768px) {
+  .lp-hero-section .title {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .lp-hero-section .sub-title {
+    font-size: 15px;
+  }
+  .lp-hero-section .btns {
+    margin-top: 2rem;
+  }
+  .lp-hero-section .imgs {
+    margin-top: 3rem;
   }
 }
 
@@ -424,6 +587,15 @@ section {
   z-index: 2;
 }
 
+@media (max-width: 576px) {
+  .explore-package::after {
+    display: none;
+  }
+  .explore-package .heading {
+    font-size: 20px;
+  }
+}
+
 .how-it-works {
   position: relative;
   padding-bottom: 50px;
@@ -460,6 +632,15 @@ section {
 
 .how-it-works .steps .descrip {
   font-size: 14px;
+}
+
+@media (max-width: 576px) {
+  .how-it-works::after {
+    display: none;
+  }
+  .how-it-works .heading {
+    font-size: 20px;
+  }
 }
 
 .book-consultation, .explore-therapy {
@@ -506,6 +687,19 @@ section {
   margin-left: 0;
   font-size: 16px;
   width: unset;
+}
+
+@media (max-width: 576px) {
+  .book-consultation .heading, .explore-therapy .heading {
+    font-size: 20px;
+  }
+  .book-consultation .img-desk, .explore-therapy .img-desk {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .book-consultation .img-desk img, .explore-therapy .img-desk img {
+    width: 100%;
+  }
 }
 
 .explore-therapy {
@@ -587,6 +781,17 @@ section {
   margin-bottom: 80px;
 }
 
+@media (max-width: 576px) {
+  .explore-therapy .floating-elem {
+    display: none;
+  }
+  .explore-therapy .img-desk {
+    border-radius: 12px;
+    margin: 16px 0;
+    height: 200px;
+  }
+}
+
 .therapy-detail .container {
   position: relative;
   z-index: 4;
@@ -624,6 +829,10 @@ section {
 .therapy-detail li {
   font-weight: 500;
   margin-bottom: 8px;
+}
+
+.therapy-detail img {
+  width: 100%;
 }
 
 .package-description {
