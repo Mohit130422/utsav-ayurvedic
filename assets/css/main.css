@@ -103,6 +103,16 @@ i {
   margin-bottom: 8px;
 }
 
+.bx-shadow {
+  -webkit-box-shadow: 0px 4px 16px 0px #240B451A;
+          box-shadow: 0px 4px 16px 0px #240B451A;
+  border-radius: 10px;
+}
+
+.bx-radius {
+  border-radius: 165px 0 165px 0;
+}
+
 .solid-action-btn {
   background-color: #FF4E00;
   padding: 10px 24px;
@@ -288,7 +298,7 @@ i {
           box-shadow: 0px 4px 8px 0px #0000001A;
 }
 
-.blur-overlay .book-consultation-box .body .consult-form form label {
+.blur-overlay .book-consultation-box .body .consult-form form p, .blur-overlay .book-consultation-box .body .consult-form form label {
   font-weight: 600;
   display: block;
 }
@@ -297,9 +307,43 @@ i {
   width: 100%;
 }
 
+.blur-overlay .book-consultation-box .body .consult-form form .outline-action-btn {
+  font-size: 14px;
+  padding: 8px 16px;
+  text-align: center;
+  color: #000;
+  border: none;
+}
+
 .blur-overlay .book-consultation-box .body .consult-form .heading {
   text-align: left;
   color: #9B0E8E;
+}
+
+.blur-overlay .book-consultation-box .body .slot-pane li {
+  list-style: none;
+}
+
+.blur-overlay .book-consultation-box .body .slot-pane li input[type='checkbox'] {
+  display: none;
+  position: absolute;
+}
+
+.blur-overlay .book-consultation-box .body .slot-pane li label {
+  background-color: #ffffff;
+  font-size: 14px;
+  padding: 8px 16px;
+  text-align: center;
+  color: #000;
+  border: none;
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 4px 8px 0px #BB77FF1A;
+          box-shadow: 0px 4px 8px 0px #BB77FF1A;
+}
+
+.blur-overlay .book-consultation-box .body .slot-pane li input[type='checkbox']:checked + label {
+  background-color: #FF4E00;
+  color: #ffffff;
 }
 
 .blur-overlay .book-consultation-box .footer {
@@ -839,6 +883,16 @@ section {
   font-weight: 500;
 }
 
+.package-description .descrip .note {
+  color: #9B0E8E;
+}
+
+.package-description .descrip .outline-action-btn {
+  margin: 0;
+  display: inline;
+  width: auto;
+}
+
 .package-description .img-desk {
   border-radius: 5px;
   height: 400px;
@@ -852,6 +906,33 @@ section {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.package-inclusions .sub-heading {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.package-inclusions .card {
+  border: none;
+  background-color: transparent;
+}
+
+.package-inclusions .card img {
+  border-radius: 10px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.package-inclusions .card-body {
+  font-weight: 500;
+}
+
+.package-inclusions .card-body .card-title {
+  font-weight: 700;
 }
 
 .package-inclusions .points {
@@ -879,7 +960,7 @@ section {
 .who-is-for img {
   width: 100%;
   height: 70%;
-  border-radius: 10px;
+  border-radius: 165px 0 165px 0;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: bottom;
