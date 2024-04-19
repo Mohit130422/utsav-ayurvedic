@@ -640,6 +640,34 @@ section {
   position: relative;
   z-index: 4;
 }
+.explore-therapy .packages-list {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.explore-therapy .packages-list li {
+  list-style: none;
+  width: 200px;
+  text-align: center;
+}
+.explore-therapy .packages-list li .img {
+  width: 200px;
+  height: 150px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1019607843);
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.explore-therapy .packages-list li .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.explore-therapy .packages-list li p {
+  font-weight: 700;
+}
 .explore-therapy .img-desk {
   width: 100%;
   height: 400px;
@@ -664,6 +692,10 @@ section {
 @media (max-width: 576px) {
   .explore-therapy .floating-elem {
     display: none;
+  }
+  .explore-therapy .packages-list {
+    overflow-x: scroll;
+    padding: 1rem;
   }
   .explore-therapy .img-desk {
     border-radius: 12px;
