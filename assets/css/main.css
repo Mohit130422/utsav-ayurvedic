@@ -2,7 +2,7 @@ html, body {
   margin: 0;
   padding: 0;
   background-color: #FAFAFA;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   position: relative;
 }
 
@@ -11,7 +11,6 @@ html, body {
 }
 
 * {
-  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
@@ -29,17 +28,6 @@ i {
   cursor: pointer;
 }
 
-@-webkit-keyframes fadeDown {
-  from {
-    opacity: 0;
-    margin-top: -2rem;
-  }
-  to {
-    opacity: 1;
-    margin-top: 1rem;
-  }
-}
-
 @keyframes fadeDown {
   from {
     opacity: 0;
@@ -50,42 +38,16 @@ i {
     margin-top: 1rem;
   }
 }
-
-@-webkit-keyframes fadeUp {
-  from {
-    opacity: 0;
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
 @keyframes fadeUp {
   from {
     opacity: 0;
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
+    transform: scale(0.9);
   }
   to {
     opacity: 1;
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
-
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -94,7 +56,6 @@ i {
     opacity: 1;
   }
 }
-
 .top-margin-16 {
   margin-top: 16px !important;
 }
@@ -104,8 +65,7 @@ i {
 }
 
 .bx-shadow {
-  -webkit-box-shadow: 0px 4px 16px 0px #240B451A;
-          box-shadow: 0px 4px 16px 0px #240B451A;
+  box-shadow: 0px 4px 16px 0px rgba(36, 11, 69, 0.1019607843);
   border-radius: 10px;
 }
 
@@ -133,15 +93,11 @@ i {
   cursor: pointer;
   margin: 0 8px;
 }
-
 .solid-action-btn:hover {
   color: #ffffff;
-  -webkit-filter: brightness(120%);
-          filter: brightness(120%);
-  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  filter: brightness(120%);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-
 @media (max-width: 576px) {
   .solid-action-btn {
     font-size: 14px;
@@ -161,11 +117,9 @@ i {
   width: 100%;
   margin: 0 8px;
 }
-
 .outline-action-btn:hover {
   color: #FF4E00;
 }
-
 @media (max-width: 576px) {
   .outline-action-btn {
     font-size: 14px;
@@ -175,28 +129,19 @@ i {
 }
 
 .section-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 16px;
 }
-
 .section-title p {
   font-weight: 700;
   font-size: 26px;
 }
-
 .section-title a {
   font-size: 14px;
   font-weight: 600;
 }
-
 @media (max-width: 576px) {
   .section-title p {
     font-size: 16px;
@@ -231,90 +176,59 @@ i {
   background-color: rgba(255, 255, 255, 0.3);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   overflow: auto;
-  -webkit-animation-name: fadeIn;
-          animation-name: fadeIn;
-  -webkit-animation-duration: 0.3s;
-          animation-duration: 0.3s;
+  animation-name: fadeIn;
+  animation-duration: 0.3s;
   z-index: 1000;
 }
-
 .blur-overlay .book-consultation-box {
   margin: auto;
   background-color: #ffffff;
-  -webkit-box-shadow: 0 8px 32px #00000052;
-          box-shadow: 0 8px 32px #00000052;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3215686275);
   overflow: hidden;
   border-radius: 8px;
   width: 750px;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  -webkit-animation-name: fadeUp;
-          animation-name: fadeUp;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
+  animation-name: fadeUp;
+  animation-duration: 0.5s;
 }
-
 .blur-overlay .book-consultation-box img {
   width: 100%;
   height: 100%;
 }
-
-.blur-overlay .book-consultation-box .head {
-  height: 56px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+.blur-overlay .book-consultation-box .body {
+  padding: 16px 32px 16px 16px;
+  position: relative;
 }
-
-.blur-overlay .book-consultation-box .head .btnCloseDialog {
-  background-color: transparent;
+.blur-overlay .book-consultation-box .body .btnCloseDialog {
+  position: absolute;
+  right: 32px;
+  background-color: #F3DDFC;
   border: none;
   padding: 1rem;
   outline: none;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-
-.blur-overlay .book-consultation-box .head .btnCloseDialog img {
+.blur-overlay .book-consultation-box .body .btnCloseDialog img {
   height: 24px;
   width: 24px;
-  opacity: 0.5;
+  opacity: 0.8;
 }
-
-.blur-overlay .book-consultation-box .body {
-  padding: 16px 32px 16px 16px;
-}
-
 .blur-overlay .book-consultation-box .body .consult-form {
   background: linear-gradient(200.73deg, #FCFAFF -0.03%, #F4ECFF 99.97%);
   padding: 1rem;
-  -webkit-box-shadow: 0px 4px 8px 0px #0000001A;
-          box-shadow: 0px 4px 8px 0px #0000001A;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1019607843);
 }
-
 .blur-overlay .book-consultation-box .body .consult-form form p, .blur-overlay .book-consultation-box .body .consult-form form label {
   font-weight: 600;
   display: block;
 }
-
 .blur-overlay .book-consultation-box .body .consult-form form button {
   width: 100%;
 }
-
 .blur-overlay .book-consultation-box .body .consult-form form .outline-action-btn {
   font-size: 14px;
   padding: 8px 16px;
@@ -322,21 +236,17 @@ i {
   color: #000;
   border: none;
 }
-
 .blur-overlay .book-consultation-box .body .consult-form .heading {
   text-align: left;
   color: #9B0E8E;
 }
-
 .blur-overlay .book-consultation-box .body .slot-pane li {
   list-style: none;
 }
-
-.blur-overlay .book-consultation-box .body .slot-pane li input[type='checkbox'] {
+.blur-overlay .book-consultation-box .body .slot-pane li input[type=checkbox] {
   display: none;
   position: absolute;
 }
-
 .blur-overlay .book-consultation-box .body .slot-pane li label {
   background-color: #ffffff;
   font-size: 14px;
@@ -345,29 +255,19 @@ i {
   color: #000;
   border: none;
   border-radius: 25px;
-  -webkit-box-shadow: 0px 4px 8px 0px #BB77FF1A;
-          box-shadow: 0px 4px 8px 0px #BB77FF1A;
+  box-shadow: 0px 4px 8px 0px rgba(187, 119, 255, 0.1019607843);
 }
-
-.blur-overlay .book-consultation-box .body .slot-pane li input[type='checkbox']:checked + label {
+.blur-overlay .book-consultation-box .body .slot-pane li input[type=checkbox]:checked + label {
   background-color: #FF4E00;
   color: #ffffff;
 }
-
 .blur-overlay .book-consultation-box .footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   height: 56px;
   padding: 0 1rem;
 }
-
 @media (max-width: 576px) {
   .blur-overlay .book-consultation-box {
     width: 420px;
@@ -388,7 +288,6 @@ section {
   width: 100%;
   overflow: hidden;
 }
-
 .lp-hero-section::after {
   content: "";
   position: absolute;
@@ -401,22 +300,16 @@ section {
   border-radius: 675px;
   background-image: linear-gradient(145deg, #FFDAC8, transparent 80%);
 }
-
 .lp-hero-section .container {
   z-index: 2;
   position: relative;
 }
-
 .lp-hero-section .container .row {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .lp-hero-section .imgs img {
   width: 100%;
 }
-
 .lp-hero-section .title {
   font-weight: 800;
   font-size: 34px;
@@ -424,27 +317,22 @@ section {
   margin-bottom: 2rem;
   line-height: 45px;
 }
-
 .lp-hero-section .title small {
   display: block;
 }
-
 .lp-hero-section .benifit-title {
   font-weight: 800;
   font-size: 30px;
   color: #4B1346;
-  margin: .25rem auto;
+  margin: 0.25rem auto;
 }
-
 .lp-hero-section .sub-title {
   font-size: 18px;
   font-weight: 500;
 }
-
 .lp-hero-section .btns {
   margin-top: 3rem;
 }
-
 @media (max-width: 991px) {
   .lp-hero-section {
     padding: 2rem 0 5rem;
@@ -475,7 +363,6 @@ section {
     height: initial;
   }
 }
-
 @media (max-width: 768px) {
   .lp-hero-section .title {
     font-size: 22px;
@@ -495,24 +382,19 @@ section {
 .explore-therapies, .explore-package {
   overflow: hidden;
 }
-
 .explore-therapies .owl-theme .owl-item, .explore-package .owl-theme .owl-item {
   margin-bottom: 16px;
 }
-
 .explore-therapies .owl-theme .owl-nav, .explore-package .owl-theme .owl-nav {
   display: block;
 }
-
 .explore-therapies .owl-theme .owl-nav .owl-prev, .explore-package .owl-theme .owl-nav .owl-prev {
   left: -30px;
   padding: 20px;
 }
-
 .explore-therapies .owl-theme .owl-nav .owl-next, .explore-package .owl-theme .owl-nav .owl-next {
   right: -30px;
 }
-
 .explore-therapies .owl-theme .owl-nav .owl-prev, .explore-therapies .owl-theme .owl-nav .owl-next, .explore-package .owl-theme .owl-nav .owl-prev, .explore-package .owl-theme .owl-nav .owl-next {
   position: absolute;
   top: 40%;
@@ -520,21 +402,17 @@ section {
   border: 1px solid #a09e9e;
   width: 30px;
   height: 30px;
-  background-color: #ffff;
-  -webkit-box-shadow: 2px 2px 16px #00000030;
-          box-shadow: 2px 2px 16px #00000030;
+  background-color: white;
+  box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.1882352941);
 }
-
 .explore-therapies .owl-theme .owl-nav .owl-prev span, .explore-therapies .owl-theme .owl-nav .owl-next span, .explore-package .owl-theme .owl-nav .owl-prev span, .explore-package .owl-theme .owl-nav .owl-next span {
   font-size: 25px;
   font-weight: 500;
   line-height: 1;
 }
-
 .explore-therapies .owl-theme .owl-nav .owl-prev:hover, .explore-therapies .owl-theme .owl-nav .owl-next:hover, .explore-package .owl-theme .owl-nav .owl-prev:hover, .explore-package .owl-theme .owl-nav .owl-next:hover {
   background-color: #a09e9e;
 }
-
 @media (max-width: 576px) {
   .explore-therapies .owl-theme .owl-nav .owl-prev, .explore-package .owl-theme .owl-nav .owl-prev {
     left: -16px;
@@ -544,28 +422,23 @@ section {
     right: -16px;
   }
 }
-
 .explore-therapies .owl-theme .item, .explore-package .owl-theme .item {
   padding: 16px 0px;
 }
-
 .explore-therapies .card, .explore-package .card {
   height: 500px;
   border: none;
-  -webkit-box-shadow: 2px 2px 16px #0000001c;
-          box-shadow: 2px 2px 16px #0000001c;
+  box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.1098039216);
   border-radius: 20px;
   margin-bottom: 40px;
   overflow: hidden;
 }
-
 .explore-therapies .card .img-wrapper, .explore-package .card .img-wrapper {
   position: relative;
   width: 100%;
   height: 250px;
   overflow: hidden;
 }
-
 .explore-therapies .card .img-wrapper img, .explore-package .card .img-wrapper img {
   width: 100%;
   height: 100%;
@@ -574,11 +447,9 @@ section {
   -o-object-position: center;
      object-position: center;
 }
-
 .explore-therapies .card .card-body, .explore-package .card .card-body {
   padding-top: 0;
 }
-
 .explore-therapies .card .card-body .product-title, .explore-package .card .card-body .product-title {
   font-size: 23px;
   color: #4B1346;
@@ -586,33 +457,25 @@ section {
   text-transform: capitalize;
   margin: 16px 0;
 }
-
 .explore-therapies .card .card-body .description, .explore-package .card .card-body .description {
   color: #4B1346;
   font-weight: 400;
   text-align: justify;
 }
-
 .explore-therapies .card .card-body .description p, .explore-package .card .card-body .description p {
   font-size: 16px;
   display: inline;
 }
-
 .explore-therapies .card .card-body .description p span, .explore-package .card .card-body .description p span {
   display: -webkit-box;
   -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-
 .explore-therapies .card .card-body .description p .readmore, .explore-package .card .card-body .description p .readmore {
   margin-top: 16px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  justify-content: end;
   font-weight: 500;
   color: #FF4E00;
 }
@@ -620,7 +483,6 @@ section {
 .explore-package {
   position: relative;
 }
-
 .explore-package::after {
   content: "";
   position: absolute;
@@ -633,12 +495,10 @@ section {
   border-radius: 675px;
   background-image: linear-gradient(145deg, #FFDAC8, transparent 80%);
 }
-
 .explore-package .row {
   position: relative;
   z-index: 2;
 }
-
 @media (max-width: 576px) {
   .explore-package::after {
     display: none;
@@ -652,39 +512,29 @@ section {
   position: relative;
   padding-bottom: 50px;
 }
-
 .how-it-works .steps {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+  align-items: start;
   padding: 30px 0px;
 }
-
 .how-it-works .steps img {
   width: 100px;
   margin-right: 10px;
 }
-
 .how-it-works .steps .num {
   color: #FF8752;
   font-weight: 700;
   font-size: 36px;
 }
-
 .how-it-works .steps .name {
   font-size: 18px;
   color: #724632;
   font-weight: 700;
   margin-left: 5px;
 }
-
 .how-it-works .steps .descrip {
   font-size: 14px;
 }
-
 @media (max-width: 576px) {
   .how-it-works::after {
     display: none;
@@ -697,7 +547,6 @@ section {
 .book-consultation, .explore-therapy {
   padding-bottom: 50px;
 }
-
 .book-consultation .img-desk, .explore-therapy .img-desk {
   width: 480px;
   height: 400px;
@@ -705,10 +554,8 @@ section {
   border-radius: 165px 0 165px 0;
   overflow: hidden;
   margin: auto;
-  -webkit-box-shadow: 0px 8px 32px 0px #4B13461A;
-          box-shadow: 0px 8px 32px 0px #4B13461A;
+  box-shadow: 0px 8px 32px 0px rgba(75, 19, 70, 0.1019607843);
 }
-
 .book-consultation .img-desk img, .explore-therapy .img-desk img {
   width: 100%;
   height: 100%;
@@ -717,29 +564,24 @@ section {
   -o-object-position: top center;
      object-position: top center;
 }
-
 .book-consultation .intro h2, .explore-therapy .intro h2 {
   font-weight: 700;
   font-size: 20px;
   margin-bottom: 8px;
 }
-
 .book-consultation .intro p, .explore-therapy .intro p {
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 16px;
 }
-
 .book-consultation .descrip p, .explore-therapy .descrip p {
   margin-bottom: 16px;
 }
-
 .book-consultation button, .explore-therapy button {
   margin-left: 0;
   font-size: 16px;
   width: unset;
 }
-
 @media (max-width: 576px) {
   .book-consultation .heading, .explore-therapy .heading {
     font-size: 20px;
@@ -758,7 +600,6 @@ section {
   position: relative;
   overflow: hidden;
 }
-
 .explore-therapy::after {
   content: "";
   position: absolute;
@@ -771,7 +612,6 @@ section {
   border-radius: 675px;
   background-image: linear-gradient(145deg, #FFDAC8, transparent 80%);
 }
-
 .explore-therapy .floating-elem ul {
   position: absolute;
   width: 100%;
@@ -782,56 +622,45 @@ section {
   padding: 0;
   overflow: hidden;
 }
-
 .explore-therapy .floating-elem ul li {
   list-style: none;
 }
-
 .explore-therapy .floating-elem ul li:first-child {
   position: absolute;
   right: 5%;
   top: 5%;
   z-index: 2;
 }
-
 .explore-therapy .floating-elem ul li:nth-child(2) {
   position: absolute;
   left: 2%;
   top: 40%;
 }
-
 .explore-therapy .container {
   position: relative;
   z-index: 4;
 }
-
 .explore-therapy .img-desk {
   width: 100%;
   height: 400px;
 }
-
 .explore-therapy .img-desk img {
   -o-object-position: center;
      object-position: center;
 }
-
 .explore-therapy .descrip {
   font-weight: 500;
 }
-
 .explore-therapy .price {
   font-weight: 600;
 }
-
 .explore-therapy .note {
   font-weight: 600;
   color: #9B0E8E;
 }
-
 .explore-therapy .row {
   margin-bottom: 80px;
 }
-
 @media (max-width: 576px) {
   .explore-therapy .floating-elem {
     display: none;
@@ -847,41 +676,32 @@ section {
   position: relative;
   z-index: 4;
 }
-
 .therapy-detail .img-desk {
   border-radius: 5px;
 }
-
 .therapy-detail .ques {
   font-weight: 700;
   font-size: 18px;
 }
-
 .therapy-detail .ans {
   font-weight: 500;
 }
-
 .therapy-detail .consult-form {
   background: linear-gradient(200.73deg, #FCFAFF -0.03%, #F4ECFF 99.97%);
   padding: 1rem;
-  -webkit-box-shadow: 0px 4px 8px 0px #0000001A;
-          box-shadow: 0px 4px 8px 0px #0000001A;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1019607843);
 }
-
 .therapy-detail .consult-form form label {
   font-weight: 600;
   display: block;
 }
-
 .therapy-detail .consult-form form button {
   width: 100%;
 }
-
 .therapy-detail li {
   font-weight: 500;
   margin-bottom: 8px;
 }
-
 .therapy-detail img {
   width: 100%;
 }
@@ -889,24 +709,20 @@ section {
 .package-description {
   font-weight: 500;
 }
-
 .package-description .descrip .note {
   color: #9B0E8E;
 }
-
 .package-description .descrip .outline-action-btn {
   margin: 0;
   display: inline;
   width: auto;
 }
-
 .package-description .img-desk {
   border-radius: 5px;
   height: 400px;
   overflow: hidden;
   text-align: center;
 }
-
 .package-description .img-desk img {
   margin: auto;
   width: 100%;
@@ -919,12 +735,10 @@ section {
   font-weight: 500;
   font-size: 18px;
 }
-
 .package-inclusions .card {
   border: none;
   background-color: transparent;
 }
-
 .package-inclusions .card img {
   border-radius: 10px;
   height: 250px;
@@ -933,33 +747,24 @@ section {
   -o-object-position: center;
      object-position: center;
 }
-
 .package-inclusions .card-body {
   font-weight: 500;
 }
-
 .package-inclusions .card-body .card-title {
   font-weight: 700;
 }
-
 .package-inclusions .points {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 16px;
-  -webkit-box-shadow: 0px 8px 16px 0px #240B451A;
-          box-shadow: 0px 8px 16px 0px #240B451A;
+  box-shadow: 0px 8px 16px 0px rgba(36, 11, 69, 0.1019607843);
 }
-
 .package-inclusions .points .icon {
   text-align: center;
 }
-
 .package-inclusions .points .icon img {
   margin: auto;
   width: 60%;
 }
-
 .package-inclusions .points .content ul {
   padding-left: 16px;
 }
@@ -980,7 +785,6 @@ section {
   position: relative;
   padding: 60px 0;
 }
-
 .contact .section-title {
   font-weight: bold;
   color: #ffffff;
@@ -990,9 +794,8 @@ section {
   position: relative;
   text-align: center;
 }
-
 .contact .section-title::after {
-  content: '';
+  content: "";
   position: relative;
   width: 40px;
   height: 4px;
@@ -1000,16 +803,14 @@ section {
   display: block;
   margin: 1rem auto;
 }
-
 .contact .form-des {
   color: #ffffff;
   font-size: 16px;
-  opacity: .9;
+  opacity: 0.9;
   display: block;
   margin-bottom: 2rem;
   text-align: center;
 }
-
 .contact .form-input {
   display: block;
   position: relative;
@@ -1018,11 +819,9 @@ section {
   padding: 12px 16px;
   border-radius: 8px;
 }
-
 .contact .form-input:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
-
 .contact .form-input label,
 .contact .form-input input,
 .contact .form-input select,
@@ -1030,13 +829,11 @@ section {
   display: block;
   color: #ffffff;
 }
-
 .contact .form-input label {
   margin-bottom: 0;
   font-size: 12px;
-  opacity: .8;
+  opacity: 0.8;
 }
-
 .contact .form-input input,
 .contact .form-input select,
 .contact .form-input textarea {
@@ -1051,22 +848,19 @@ section {
      -moz-appearance: textfield;
           appearance: textfield;
 }
-
 .contact .form-input .filled {
   font-size: 12px;
   top: 8px;
 }
-
 .contact .form-input option {
   color: #000000;
 }
-
 .contact .solid-action-btn {
   position: relative;
   background-color: #FF4E00;
   color: #ffffff;
   border: none;
-  padding: .8rem 1rem;
+  padding: 0.8rem 1rem;
   text-align: center;
   font-size: 16px;
   text-transform: uppercase;
@@ -1074,14 +868,9 @@ section {
   outline: none;
   border-radius: 8px;
 }
-
 .contact .solid-action-btn:hover {
-  -webkit-filter: brightness(120%);
-          filter: brightness(120%);
+  filter: brightness(120%);
 }
-
 .contact .solid-action-btn:active {
-  -webkit-filter: brightness(80%);
-          filter: brightness(80%);
-}
-/*# sourceMappingURL=main.css.map */
+  filter: brightness(80%);
+}/*# sourceMappingURL=main.css.map */

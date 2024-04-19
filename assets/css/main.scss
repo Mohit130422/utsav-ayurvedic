@@ -197,13 +197,13 @@ i{
             width: 100%;
             height: 100%;
         }
-        .head{
-            height: 56px;
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
+        .body{
+            padding: 16px 32px 16px 16px;
+            position: relative;
             .btnCloseDialog{
-                background-color: transparent;
+                position: absolute;
+                right: 32px;
+                background-color: $card-grad-color-1;
                 border: none;
                 padding: 1rem;
                 outline: none;
@@ -211,12 +211,9 @@ i{
                 img{
                     height: 24px;
                      width: 24px;
-                     opacity: 0.5;
+                     opacity: 0.8;
                 }
             }
-        }
-        .body{
-            padding: 16px 32px 16px 16px;
             .consult-form{
                 background: linear-gradient(200.73deg, #FCFAFF -0.03%, #F4ECFF 99.97%);
                 padding: 1rem;
