@@ -100,9 +100,9 @@ i {
 }
 @media (max-width: 576px) {
   .solid-action-btn {
-    font-size: 14px;
+    font-size: 12px;
     padding: 8px 10px;
-    margin: 0 8px;
+    margin: 0 6px;
   }
 }
 
@@ -164,6 +164,12 @@ i {
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 30px;
+}
+
+@media (max-width: 576px) {
+  .col-reverse {
+    flex-direction: column-reverse;
+  }
 }
 
 .blur-overlay {
@@ -589,6 +595,7 @@ section {
   .book-consultation .img-desk, .explore-therapy .img-desk {
     width: 100%;
     margin-bottom: 2rem;
+    border-radius: 12px;
   }
   .book-consultation .img-desk img, .explore-therapy .img-desk img {
     width: 100%;
@@ -737,6 +744,11 @@ section {
 .therapy-detail img {
   width: 100%;
 }
+@media (max-width: 576px) {
+  .therapy-detail img {
+    border-radius: 12px;
+  }
+}
 
 .package-description {
   font-weight: 500;
@@ -809,6 +821,11 @@ section {
      object-fit: cover;
   -o-object-position: bottom;
      object-position: bottom;
+}
+@media (max-width: 576px) {
+  .who-is-for img {
+    border-radius: 12px;
+  }
 }
 
 .contact {

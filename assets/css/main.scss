@@ -107,9 +107,9 @@ i{
         box-shadow: 0 8px 16px rgba($text-dark-color, .2);
     }
     @media(max-width:576px){
-        font-size: 14px;
+        font-size: 12px;
         padding: 8px 10px;
-        margin: 0 8px;
+        margin: 0 6px;
     }
 }
 
@@ -167,6 +167,11 @@ i{
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 30px;
+}
+.col-reverse{
+    @media (max-width: 576px) {
+        flex-direction: column-reverse;
+    }
 }
 .blur-overlay{
     display: none;
@@ -592,6 +597,7 @@ section{
         .img-desk{
             width: 100%;
             margin-bottom: 2rem;
+            border-radius: 12px;
             img{
                 width: 100%;
             }
@@ -747,6 +753,11 @@ section{
     img{
         width: 100%;
     }
+    @media(max-width:576px){
+        img{
+            border-radius: 12px;
+        }
+    }
 }
 .package-description{
     font-weight: 500;
@@ -817,6 +828,11 @@ section{
         border-radius: 165px 0 165px 0;
         object-fit: cover;
         object-position:  bottom;
+    }
+    @media(max-width:576px){
+        img{
+            border-radius: 12px;
+        }
     }
 }
 .contact {
