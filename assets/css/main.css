@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
 html, body {
   margin: 0;
   padding: 0;
@@ -36,6 +37,17 @@ i {
   to {
     opacity: 1;
     margin-top: 1rem;
+  }
+}
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, 0px);
   }
 }
 @keyframes fadeUp {
@@ -280,6 +292,9 @@ i {
   }
   .blur-overlay .book-consultation-box img {
     display: none;
+  }
+  .blur-overlay .book-consultation-box .body .btnCloseDialog img {
+    display: block;
   }
 }
 
@@ -922,4 +937,38 @@ section {
 }
 .contact .solid-action-btn:active {
   filter: brightness(80%);
+}
+
+.thankyou {
+  padding-bottom: 50px;
+}
+.thankyou .col {
+  padding: 3rem;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.thankyou .col img {
+  width: 150px;
+  margin-bottom: 30px;
+  animation: floating 3s ease-in-out infinite;
+}
+.thankyou .col h1 {
+  font-family: "Yeseva One", serif;
+  font-size: 65px;
+  color: #9B0E8E;
+  margin-bottom: 0;
+}
+.thankyou .col p {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 25px 0;
+}
+.thankyou .col .btns {
+  width: 50%;
+}
+.thankyou .col .btns .solid-action-btn, .thankyou .col .btns .outline-action-btn {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */

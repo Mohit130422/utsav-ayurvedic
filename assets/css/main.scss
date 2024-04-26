@@ -1,4 +1,4 @@
-// $primary-color: #3F107E;
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
 $primary-color: #FF4E00;
 $secondary-color: #9B0E8E;
 $secondary-white-color: #FFD4FB;
@@ -51,6 +51,17 @@ i{
         opacity: 1;
         margin-top: 1rem;
     }
+}
+@keyframes floating {
+    0% { 
+        transform: translate(0,  0px); 
+    }
+    50% { 
+        transform: translate(0, 15px); 
+    }
+    100% { 
+        transform: translate(0, -0px); 
+    }    
 }
 
 @keyframes fadeUp {
@@ -281,6 +292,13 @@ i{
             width: 420px;
             img{
                 display: none;
+            }
+            .body{
+                .btnCloseDialog{
+                    img{
+                        display: block;
+                    }
+                }
             }
         }
     }
@@ -928,4 +946,36 @@ section{
         }
     }
 }
-
+.thankyou{
+    padding-bottom: 50px;
+    .col{
+        padding: 3rem;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        img{
+            width: 150px;
+            margin-bottom: 30px;
+            animation: floating 3s ease-in-out infinite;
+        }
+        h1{
+            font-family: "Yeseva One", serif;
+            font-size: 65px;
+            color: $secondary-color;
+            margin-bottom: 0;
+        }
+        p{
+            font-size: 20px;
+            font-weight: 500;
+            margin: 25px 0;
+        }
+        .btns{
+            width: 50%;
+            .solid-action-btn,.outline-action-btn{
+                width: 100%;
+            }
+        }
+    }
+}
