@@ -977,5 +977,24 @@ section{
                 width: 100%;
             }
         }
+        @media(max-width:576px){
+            text-align: center;
+            margin: 0 16px;
+            img{
+                width: 90px;
+            }
+            h1{
+                font-size: 40px;
+            }
+            p{
+                font-size: 14px;
+            }
+            .btns{
+                width: 100%;
+                .solid-action-btn,.outline-action-btn{
+                    margin: 8px 0;
+                }
+            }
+        }
     }
 }

@@ -971,4 +971,25 @@ section {
 }
 .thankyou .col .btns .solid-action-btn, .thankyou .col .btns .outline-action-btn {
   width: 100%;
+}
+@media (max-width: 576px) {
+  .thankyou .col {
+    text-align: center;
+    margin: 0 16px;
+  }
+  .thankyou .col img {
+    width: 90px;
+  }
+  .thankyou .col h1 {
+    font-size: 40px;
+  }
+  .thankyou .col p {
+    font-size: 14px;
+  }
+  .thankyou .col .btns {
+    width: 100%;
+  }
+  .thankyou .col .btns .solid-action-btn, .thankyou .col .btns .outline-action-btn {
+    margin: 8px 0;
+  }
 }/*# sourceMappingURL=main.css.map */
