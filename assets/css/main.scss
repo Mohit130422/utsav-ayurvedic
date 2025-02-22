@@ -998,3 +998,272 @@ section{
         }
     }
 }
+.rejuvenate{
+    .sub-heading{
+        margin-bottom: 16px;
+    }
+    .content{
+        background-color: #FFFCF2;
+        padding: 10px;
+        box-shadow: 0px 1px 10px 0px #0000001A;
+        position: relative;
+        height: 350px;
+        padding: 2rem;
+        border-radius: 8px 8px 50px;
+        .ques{
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        .ans{
+            padding: 2rem;
+        }
+        .img-container{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            align-items: center;
+            img{
+                width: 40%;
+            }
+        }
+    }
+    .consult-form{
+        background: linear-gradient(200.73deg, #FED3FF -0.03%, #F4ECFF 99.97%);
+        padding: 2rem;
+        border-radius: 15px;
+        box-shadow: 0px 4px 8px 0px #0000001A;
+        position: relative;
+        .logo-img{
+            position: absolute;
+            top: 0;
+            right: 0;
+            img{
+                width: 70px;
+            }
+        }
+        form{
+            label{
+                font-weight: 600;
+                display: block;
+            }
+            button{
+                width: 100%;
+            }
+        }
+    }
+    @media(max-width:768px){
+        .content{
+            height: auto;
+            .ans{
+                padding: 0;
+            }
+            .img-container{
+                position: relative;
+                flex-direction: column;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .consult-form{
+            padding: 1rem;
+        }
+    }
+}
+.why-choose-anukriya{
+    padding-bottom: 50px;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        top: 8%;
+        margin: auto;
+        z-index: 0;
+        left: 30%;
+        width: 600px;
+        height: 600px;
+        border-radius: 675px;
+        background-image: linear-gradient(145deg, #F7FFE9, transparent 80%);
+    }
+    .container{
+        position: relative;
+        .content{
+            box-shadow: 0px 1px 10px 0px #0000001A;
+            background-color: $white-color;
+            position: relative;
+            text-align: left;
+            border-radius: 16px 8px 95px;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            .intro{
+                padding: 4rem 2rem 1rem;
+                position: relative;
+                .label{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background-color: #0A7C1E;
+                    color: $white-color;
+                    padding: 8px;
+                }
+            }
+            p{
+                font-weight: 600;
+                text-align: left;
+            }
+            .ques{
+                font-weight: 600;
+                margin-bottom: 30px;
+            }
+            .img-container{
+                width: 300px;
+                height: 300px;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    object-position: center;
+                }
+            }
+        }
+    }
+    .sub-heading{
+        color: #0A7C1E;
+        margin-bottom: 16px;
+    }
+    p{
+        font-weight: 600;
+        text-align: center;
+    }  
+    @media(max-width: 576px){
+        &::before{
+            display: none;
+        }
+        .container{
+            .content{
+                flex-direction: column;
+                .img-container{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+.advantage-anukriya-detox{
+    padding: 50px 0;
+    background: linear-gradient(102.24deg, #F6FFE7 26.08%, #FCFFF7 96.67%);
+    &::after{
+        background-image: none;
+    }
+    .row{
+        margin-bottom: 0;
+    }
+    .sub-heading{
+        color: #0A7C1E;
+    }
+    .item{
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        .icon{
+            margin-right: 16px;
+        }
+        .content{
+            font-weight: 500;
+            h5{
+                font-weight: 700;
+            }
+        }
+    }
+}
+.what-is-panchkarma{
+    background: linear-gradient(279.65deg, #FFFEEC 50%, #FFFFFF 97.4%);
+    .heading{
+        color: #0A7C1E;
+    }
+    .description{
+        font-weight: 600;
+    }
+    .img-container{
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+        img{
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    @media(max-width:576px){
+        .img-container{
+            height: auto;
+        }
+    }
+}
+.weight-loss{
+    .content{
+        height: auto;
+        border-radius: 8px;
+        padding: 1rem;
+        .d-flex{
+            position: relative;
+        }
+    }
+    .item{
+        .icon{
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+                object-position: center;
+            }
+        }
+    }
+}
+.why-weight-loss{
+    .content{
+        box-shadow: none !important;
+        background-color: unset !important;
+        border-radius: 0 !important;
+        .features {
+            li {
+                font-size: 16px;
+                margin-bottom: 15px;
+                font-weight: 500;
+                span {
+                    font-weight: bold;
+                    color: #222;
+                }
+            }
+        }
+    }
+}
+.advantage-anukriya-wl{
+    background: linear-gradient(103.08deg, rgba(227, 252, 182, 0.61) 16.44%, rgba(188, 252, 105, 0.61) 50%);
+    .sub-heading{
+        background-color: $white-color;
+        padding: 5px 10px;
+        margin-bottom: 0;
+    }
+    .features{
+        li{
+            font-size: 18px;
+            font-weight: 600;
+            &::marker{
+                color: #0A7C1E;
+            }
+            span{
+                font-weight: 700;
+                color: #0A7C1E;
+            }
+        }
+    }
+    img{
+        width: 100%;
+    }
+}
