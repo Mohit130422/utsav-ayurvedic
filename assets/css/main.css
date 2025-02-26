@@ -1002,7 +1002,7 @@ section {
   padding: 10px;
   box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1019607843);
   position: relative;
-  height: 350px;
+  height: 300px;
   padding: 2rem;
   border-radius: 8px 8px 50px;
 }
@@ -1012,6 +1012,7 @@ section {
 }
 .rejuvenate .content .ans {
   padding: 2rem;
+  font-size: 18px;
 }
 .rejuvenate .content .img-container {
   position: absolute;
@@ -1035,7 +1036,10 @@ section {
   right: 0;
 }
 .rejuvenate .consult-form .logo-img img {
-  width: 70px;
+  width: 90px;
+}
+.rejuvenate .consult-form .sub-heading {
+  font-size: 20px;
 }
 .rejuvenate .consult-form form label {
   font-weight: 600;
@@ -1047,6 +1051,7 @@ section {
 @media (max-width: 768px) {
   .rejuvenate .content {
     height: auto;
+    margin-bottom: 30px;
   }
   .rejuvenate .content .ans {
     padding: 0;
@@ -1087,7 +1092,7 @@ section {
   background-color: #ffffff;
   position: relative;
   text-align: left;
-  border-radius: 16px 8px 95px;
+  border-radius: 16px 8px 85px;
   overflow: hidden;
   display: flex;
   justify-content: space-between;
@@ -1104,17 +1109,17 @@ section {
   color: #ffffff;
   padding: 8px;
 }
-.why-choose-anukriya .container .content p {
-  font-weight: 600;
-  text-align: left;
-}
 .why-choose-anukriya .container .content .ques {
-  font-weight: 600;
+  text-align: left;
+  font-weight: 500;
   margin-bottom: 30px;
 }
+.why-choose-anukriya .container .content .ques span {
+  font-weight: 700;
+}
 .why-choose-anukriya .container .content .img-container {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   overflow: hidden;
 }
 .why-choose-anukriya .container .content .img-container img {
@@ -1173,6 +1178,17 @@ section {
 .advantage-anukriya-detox .item .content h5 {
   font-weight: 700;
 }
+@media (max-width: 576px) {
+  .advantage-anukriya-detox .item {
+    display: grid;
+    grid-template-columns: 80px auto;
+    align-items: center;
+  }
+  .advantage-anukriya-detox .item .icon {
+    width: 80px !important;
+    height: 80px !important;
+  }
+}
 
 .what-is-panchkarma {
   background: linear-gradient(279.65deg, #FFFEEC 50%, #FFFFFF 97.4%);
@@ -1183,15 +1199,31 @@ section {
 .what-is-panchkarma .description {
   font-weight: 600;
 }
+.what-is-panchkarma .intro {
+  padding: 2rem 2rem 1rem;
+  position: relative;
+}
+.what-is-panchkarma .intro .ques {
+  text-align: left;
+  font-weight: 500;
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 2;
+}
+.what-is-panchkarma .intro .ques span {
+  font-weight: 700;
+}
 .what-is-panchkarma .img-container {
   width: 100%;
-  height: 400px;
+  height: 100%;
   overflow: hidden;
 }
 .what-is-panchkarma .img-container img {
+  width: 100%;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+  border-radius: 20px;
 }
 @media (max-width: 576px) {
   .what-is-panchkarma .img-container {
@@ -1246,6 +1278,7 @@ section {
 }
 .advantage-anukriya-wl .features li {
   font-size: 18px;
+  line-height: 2;
   font-weight: 600;
 }
 .advantage-anukriya-wl .features li::marker {
